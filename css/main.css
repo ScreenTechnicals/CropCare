@@ -148,7 +148,7 @@ html {
     border-radius: 30px;
 }
 .Contact_form_box .auth_image{
-  background: url(./images/contact.jpg);
+  background: url(./images/auth_image.jpg);
   width: 100%;
   height: 100%;
   overflow: hidden;
