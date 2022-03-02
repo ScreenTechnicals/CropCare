@@ -9,8 +9,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700&family=Sacramento&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <title>Home | Crop Care</title>
-    <link rel="stylesheet" href="./css/main.css">
+    <title>Contact Us | Crop Care</title>
+    <link rel="stylesheet" href="../css/main.css">
 </head>
 <body>
 <div class="container-fluid m-0 p-0 position-fixed navbar-div">
@@ -23,19 +23,19 @@
             <div class="collapse navbar-collapse pe-5" id="navbar">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex align-items-center">
                     <li class="nav-item">
-                        <a class="nav-link active fw-semi-bold text-primary text-center hover-color-primary" aria-current="page" href="index.html">Home</a>
+                        <a class="nav-link active fw-semi-bold text-center hover-color-primary" aria-current="page" href="../index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active fw-semi-bold text-center hover-color-primary" aria-current="page" href="./htmls/menu.html">Menu</a>
+                        <a class="nav-link active fw-semi-bold text-center hover-color-primary" aria-current="page" href="menu.html">Menu</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active fw-semi-bold text-center hover-color-primary" aria-current="page" href="./htmls/profile.html">Profile</a>
+                        <a class="nav-link active fw-semi-bold text-center hover-color-primary" aria-current="page" href="profile.html">Profile</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active fw-semi-bold text-center hover-color-primary" aria-current="page" href="./htmls/contact.html">Contact Us</a>
+                        <a class="nav-link active fw-semi-bold text-center hover-color-primary text-primary" aria-current="page" href="contact.html">Contact Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active fw-semi-bold text-center hover-color-primary" aria-current="page" href="./htmls/orders.html">Orders <span class="quantity" style="width: 50px; height: 50px; background: red; padding: 5px 10px; border-radius: 50%; position: relative; top: -8px; color: #000;">0</span></a>
+                        <a class="nav-link active fw-semi-bold text-center hover-color-primary" aria-current="page" href="orders.html">Orders <span class="quantity" style="width: 50px; height: 50px; background: red; padding: 5px 10px; border-radius: 50%; position: relative; top: -8px; color: #000;">0</span></a>
                     </li>
                     <li class="nav-item">
                         <button class="btn btn-secondary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">Login</button>
@@ -66,19 +66,32 @@
 </div>
 <!-- block body -->
 
-<section class="section_one container p-3 py-0 d-flex flex-column justify-content-center align-items-center text-center" style="padding: 0 30px !important;">
-    <div class="weather">
-        <i class="bi bi-brightness-high-fill" style="font-size: 100px; color: rgb(255, 166, 0);"></i>
-        <h5></h5>
-    </div>
-    <h6 class="text-center">ONE STOP DESTINATION FOR ALL FARMERS</h6>
-    <h1 class="text-center fw-bold">Welcome To Crop Care</h1>
-    <p class="text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod autem eveniet, omnis praesentium possimus doloremque a fuga maxime aliquid asperiores.</p>
-    <a class="btn btn-primary fs-4 rounded-pill" style="outline:none; border:none" href="#">Get Started</a>
+<div class="container-fluid d-flex justify-content-center align-items-center m-0 p-0" style="min-height: 100vh;">
+    <form class="Contact_form_box d-flex justify-content-center align-items-center">
+        <!-- CSRF TOKEN -->
+        <div class="auth_image overflow-hidden col"></div>
+        <div class="mb-3 col d-flex flex-column align-items-center position-relative px-4">
+            <h1 class="fw-semi-bold fs-4 text-center">Feel Free to Ask !</h1>
+            <h3 class="-" style="color:gray; font-size: 18px;">Never be shy to ask</h3>
+            <div class="py-2 form_fields">
+                <label for="full_name" class="form-label fw-semi-bold">Full Name</label>
+                <input type="full_name" class="form-control" id="full_name" name="full_name" placeholder="Please Enter Your Full Name Here" required>
+            </div>
+            <div class="py-2 form_fields">
+                <label for="email" class="form-label fw-semi-bold">Email address</label>
+                <input type="email" class="form-control" id="email" name="useremail" placeholder="Please Enter Your Registered Email Address Here" required>
+            </div>
+            <div class="py-2 form_fields">
+                <label for="message" class="form-label fw-semi-bold">Message</label>
+                <textarea type="message" class="form-control" id="message" name="message" style="height: 150px;" placeholder="Please Enter Your Questions or suggestions Here" required></textarea>
+            </div>
+            <div class="py-2 form_fields">
+                <button class="btn d-block btn-primary hover-bg-secondary btn-auth" style="border: none;" type="submit">Send</button>
+            </div>
+        </div>
+    </form>
+</div>
 
-    <div class="circle1"></div>
-
-</section>
 
 
 <footer class="text-center" style="background: #f1f1f1;padding: 30px;">

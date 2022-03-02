@@ -177,11 +177,11 @@ html {
 }
 .circle1{
   position: absolute;
-  top: 40%;
+  top: 48%;
   left: 30%;
   width: 150px;
   height: 150px;
-  background: rgb(255, 235, 125);
+  background: rgb(136, 255, 125);
   z-index: -1;
   border-radius: 50%;
 }
@@ -349,5 +349,20 @@ html {
     position: relative !important;
     top: -200px !important;
     /* transform: translateY(-200px) !important; */
+  }
+}
+
+.weather{
+  animation: rotate_sun 10s infinite linear;
+}
+.section_one{
+  position: relative !important;
+}
+@keyframes rotate_sun {
+  to{
+    transform: rotate(0deg);
+  }
+  from {
+    transform: rotate(-360deg);
   }
 }
