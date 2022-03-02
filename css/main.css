@@ -296,6 +296,9 @@ html {
   .section_one {
     padding: 0 !important;
   }
+  .searchbox{
+    width: 90% !important;
+  }
   .section_one .row .left_section_one {
     padding: 40px !important;
     align-items: center !important;
