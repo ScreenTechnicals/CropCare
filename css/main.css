@@ -369,3 +369,15 @@ html {
     transform: rotate(-360deg);
   }
 }
+
+.section_one .logo {
+  width: 100% !important;
+  min-height: 100vh;
+  position: absolute;
+  z-index: -1;
+  background: url(../images/logo.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: .05;
+}
